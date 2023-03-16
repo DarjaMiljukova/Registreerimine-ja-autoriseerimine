@@ -1,4 +1,5 @@
 from random import*
+import random
 from string import*
 import string
 from tkinter import *
@@ -108,31 +109,32 @@ aken = Tk()
 aken.geometry("600x600")
 aken.title("Registreerimine ja autoriseerimine")
 
-lbl_username = Label(aken, text="Kasutajanimi: ", font="Arial 20", bg="mediumslateblue")
+lbl_username = Label(aken, text="Kasutajanimi: ", font="Courier 20", bg="mediumslateblue")
 lbl_username.pack(pady=8)
-entry_username = Entry(aken, font="Arial 20", bg="slategrey", fg="darkslateblue")
+entry_username = Entry(aken, font="Courier 20", bg="slategrey", fg="darkslateblue")
 entry_username.pack()
 
-lbl_pass = Label(aken, text="Salasõna: ", font="Arial 20", bg="mediumslateblue")
+lbl_pass = Label(aken, text="Salasõna: ", font="Courier 20", bg="mediumslateblue")
 lbl_pass.pack(pady=8)
-entry_passw = Entry(aken, show="*", font="Arial 20", bg="slategrey", fg="darkslateblue")
+entry_passw = Entry(aken, show="*", font="Courier 20", bg="slategrey", fg="darkslateblue")
 entry_passw.pack()
 
-btn_reg = Button(aken, text="Registreerimine", command=registreemi, font="Arial 20", bg="mediumslateblue")
+btn_reg = Button(aken, text="Registreerimine", command=registreemi, font="Courier 20", bg="mediumslateblue")
 btn_reg.pack(pady=10)
-btn_login = Button(aken, text="Logi sisse", command=log, font="Arial 20", bg="mediumslateblue")
+btn_login = Button(aken, text="Logi sisse", command=log, font="Courier 20", bg="mediumslateblue")
 btn_login.pack()
 
 
 
-btn_generate = Button(aken, text="Parooli loomine", command=gen_pass, font="Arial 20", bg="mediumslateblue")
+btn_generate = Button(aken, text="Parooli loomine", command=gen_pass, font="Courier 20", bg="mediumslateblue")
 btn_generate.pack(pady=10)
 
-btn_recover = Button(aken, text="Parooli taastamine", command=rec_pass, font="Arial 20", bg="mediumslateblue")
+btn_recover = Button(aken, text="Parooli taastamine", command=rec_pass, font="Courier 20", bg="mediumslateblue")
 btn_recover.pack(pady=10)
 
-btn_change = Button(aken, text="Muuda salasõna", command=cha_pass, font="Arial 20", bg="mediumslateblue")
+btn_change = Button(aken, text="Muuda salasõna", command=cha_pass, font="Courier 20", bg="mediumslateblue")
 btn_change.pack(pady=10)
 
 aken.config(bg="midnightblue")
 aken.mainloop()
+
